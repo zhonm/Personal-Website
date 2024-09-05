@@ -122,12 +122,34 @@ a, a:active, a:hover {
     margin: 20px 20px;
     cursor: pointer;
     border-radius: 12px;
+    position: relative; /* Add this line */
 }
 
-.hire-me-btn:hover {
-    background-color: blue;
-    color: White;
+.tooltip {
+    position: absolute; /* Change from relative to absolute */
+    display: inline-block;
+    visibility: hidden;
+    width: auto;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px;
+    bottom: 125%; /* Position the tooltip above the button */
+    left: 50%;
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 0.3s;
+    font-size: 25px;
+    z-index: 1; /* Ensure tooltip is above other elements */
 }
+
+.hire-me-btn:hover .tooltip {
+    visibility: visible;
+    opacity: 1; /* Change from 100 to 1 */
+    font-size: 25px;
+}
+
 .zhon {
     position: relative;
     display: flex;
