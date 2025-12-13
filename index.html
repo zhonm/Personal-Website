@@ -1,213 +1,410 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width,initial-scale=1.0" />
-        <meta name="theme-color" content="#000000" />
-        <meta name="author" content="Zhon Mark Manaois" />
-        <meta name="description" content="Zhon Mark&#39;s Personal Website" />
-        <meta name="keywords" content="Zhon Mark Manaois, Zhon Mark, Manaois, Zhon MarkManaois, Front-end Developer" />
-        <meta property="og:title" content="Zhon Mark Manaois" />
-        <meta property="og:description" content="Personal Website" />
-        <meta property="og:type" content="website" />
-        <title>Zhon Mark Manaois - Personal Website</title>
-        
-        <link rel="shortcut icon" href="images/code.png" />
-        <link rel="stylesheet" href="style.css" />
-    </head>
+<html lang="en">
 
-    <body>
-        <div class="navbar">
-            <div class="navbar-container">
-                <div class="nav-item"><a class="nav-item-link" href="#zhon">Home</a></div>
-                <div class="nav-item"><a class="nav-item-link" href="#about">About</a></div>
-                <div class="nav-item"><a class="nav-item-link" href="#projects">Projects</a></div>
-            </div>
-        </div>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zhon Mark R. Manaois | Full-Stack Developer</title>
+    <meta name="description" content="Highly motivated fourth-year BSIT student with strong technical capabilities. Proficient in PHP, HTML/CSS, Android Development, and more. Seeking internship opportunities in software development.">
+    <meta name="keywords" content="Zhon Mark R. Manaois, Full-Stack Developer, BSIT, Web Developer, PHP Developer, Android Developer, Portfolio, Internship, Our Lady of Fatima University">
+    <meta name="author" content="Zhon Mark R. Manaois">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="EN">
+    
+    <!-- Open Graph / Social Media -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Zhon Mark R. Manaois | Full-Stack Developer">
+    <meta property="og:description" content="Highly motivated BSIT student seeking internship opportunities. Skilled in PHP, Web Development, and Android Development.">
+    
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
 
-        <div id="zhon" class="zhon">
-            <div class="zhon-container">
-                <div class="zhon-profile">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-                    <div class="zhon-profile-img-wrapper">
-                        <div class="zhon-profile-img"></div>
-                    </div>
+    <!-- Vendor CSS Files -->
+    <link href="vendor/aos/aos.css" rel="stylesheet">
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    
+    <!-- Template Main CSS File -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
 
-                    <div class="zhon-profile-content">
-                        <div class="zhon-headline">Zhon Mark Manaois</div>
-                        <div class="zhon-text">Front-End Developer</div>
-                    </div>
-
-                    <div class="zhon-icons">
-                        <a href="https://www.facebook.com/filersh?mibextid=LQQJ4d" target="_blank" class="icon-link"><i class="fab fa-facebook"></i></a>
-                        <a href="https://www.instagram.com/makie_mk" target="_blank" class="icon-link"><i class="fab fa-instagram"></i></a>
-                    </div>
-
-                    <a href="mailto:zrmanaois9140ant@student.fatima.edu.ph" target="_blank" class="hire-me-btn">Email Me
-                        <span class="tooltip">zrmanaois9140ant@student.fatima.edu.ph</span>
+<body>
+    <!-- ======= Mobile nav toggle button ======= -->
+    <button class="mobile-nav-toggle d-xl-none" aria-label="Toggle navigation">
+        <i class='bx bx-menu'></i>
+    </button>
+    
+    <!-- ======= Header/Sidebar ======= -->
+    <header id="header">
+        <div class="d-flex flex-column">
+            <div class="profile">
+                <h1><a href="index.html">Zhon Mark R. Manaois</a></h1>
+                <p class="tagline">Full-Stack Developer</p>
+                <div class="social-links">
+                    <a href="https://github.com/zhonm" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                        <i class='bx bxl-github'></i>
                     </a>
-
-                    <a class="arrow fa fa-arrow-down fa-3x" href="#about"></a>
-
+                    <a href="https://www.linkedin.com/in/zhon-mark-manaois-a02bb0338/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                        <i class='bx bxl-linkedin'></i>
+                    </a>
+                    <a href="mailto:zhonmarkmanaois@gmail.com" aria-label="Email">
+                        <i class='bx bx-envelope'></i>
+                    </a>
                 </div>
             </div>
-        </div>
 
-        <div id="about" class="about">
-            <div class="container about-container">
+            <nav id="navbar" class="nav-menu navbar">
+                <ul>
+                    <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>
+                    <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a></li>
+                    <li><a href="#skills" class="nav-link scrollto"><i class="bx bx-code-alt"></i> <span>Skills</span></a></li>
+                    <li><a href="#experience" class="nav-link scrollto"><i class="bx bx-briefcase"></i> <span>Experience</span></a></li>
+                    <li><a href="#education" class="nav-link scrollto"><i class="bx bx-book"></i> <span>Education</span></a></li>
+                    <li><a href="#certifications" class="nav-link scrollto"><i class="bx bx-award"></i> <span>Certifications</span></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header><!-- End Header -->
+
+    <!-- ======= Hero Section ======= -->
+    <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
+        <div class="hero-container" data-aos="fade-up" data-aos-delay="100">
+            <h1>Zhon Mark R. Manaois</h1>
+            <p>I'm a <span class="typed" data-typed-items="Full-Stack Developer, BSIT 4th Year Student, Tech Enthusiast, Problem Solver"></span></p>
+            <div class="hero-cta">
+                <a href="#about" class="btn btn-primary scrollto">Learn More</a>
+                <a href="#certifications" class="btn btn-secondary scrollto">View Certifications</a>
+            </div>
+        </div>
+    </section><!-- End Hero -->
+
+    <main id="main">
+        <!-- ======= About Section ======= -->
+        <section id="about" class="about">
+            <div class="container">
+                <div class="section-title" data-aos="fade-up">
+                    <h2>About</h2>
+                    <p>Get To Know Me</p>
+                </div>
+
+                <div class="content" data-aos="fade-up" data-aos-delay="100">
+                    <span class="highlight">🎓 Seeking Internship Opportunities</span>
+                    <h3>Full-Stack Developer & BSIT Student</h3>
+                    <p>
+                        Hello! I'm <strong>Zhon Mark R. Manaois</strong>, a highly motivated fourth-year BSIT student at 
+                        <em>Our Lady of Fatima University</em> with strong technical capabilities and a proactive attitude. 
+                        I'm capable of quickly learning and adapting to changing circumstances.
+                    </p>
+                    <p>
+                        I'm currently seeking an internship where I may contribute to team success while gaining hands-on 
+                        experience within a professional IT environment. I am committed to producing high-quality work, 
+                        and I'm willing to take on new challenges as they arise in different areas of technology.
+                    </p>
+                    <p>
+                        <strong>Languages:</strong> Filipino (Native), English (Fluent)<br>
+                        <strong>Interests:</strong> Web Development, Badminton, Emerging Technologies
+                    </p>
+                </div>
+            </div>
+        </section><!-- End About Section -->
+
+        <!-- ======= Skills Section ======= -->
+        <section id="skills" class="skills section-bg">
+            <div class="container">
+                <div class="section-title" data-aos="fade-up">
+                    <h2>Skills</h2>
+                    <p>My Technical Expertise</p>
+                </div>
+                
+                <div class="skills-grid" data-aos="fade-up" data-aos-delay="100">
+                    <div class="skill-card">
+                        <div class="skill-icon" style="background: linear-gradient(135deg, #777BB4 0%, #5a5d8e 100%);">
+                            <span style="font-weight: 700; font-size: 20px;">PHP</span>
+                        </div>
+                        <span class="skill-name">PHP</span>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class='bx bxl-html5' style="color: #E34F26;"></i>
+                        </div>
+                        <span class="skill-name">HTML5</span>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class='bx bxl-css3' style="color: #1572B6;"></i>
+                        </div>
+                        <span class="skill-name">CSS3</span>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class='bx bxl-javascript' style="color: #F7DF1E;"></i>
+                        </div>
+                        <span class="skill-name">JavaScript</span>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class='bx bxl-react' style="color: #61DAFB;"></i>
+                        </div>
+                        <span class="skill-name">React</span>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class='bx bxl-android' style="color: #3DDC84;"></i>
+                        </div>
+                        <span class="skill-name">Android</span>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class='bx bxl-git' style="color: #F05032;"></i>
+                        </div>
+                        <span class="skill-name">Git/GitHub</span>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">
+                            <i class='bx bxs-data' style="color: #4479A1;"></i>
+                        </div>
+                        <span class="skill-name">MySQL</span>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon" style="background: linear-gradient(135deg, #2B579A 0%, #1e3d6e 100%);">
+                            <i class='bx bxs-file-doc' style="color: #fff;"></i>
+                        </div>
+                        <span class="skill-name">MS Word</span>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon" style="background: linear-gradient(135deg, #217346 0%, #185a36 100%);">
+                            <i class='bx bx-table' style="color: #fff;"></i>
+                        </div>
+                        <span class="skill-name">MS Excel</span>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon" style="background: linear-gradient(135deg, #D24726 0%, #a3371d 100%);">
+                            <i class='bx bxs-slideshow' style="color: #fff;"></i>
+                        </div>
+                        <span class="skill-name">PowerPoint</span>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon" style="background: linear-gradient(135deg, #10a37f 0%, #0d8567 100%);">
+                            <i class='bx bx-brain' style="color: #fff;"></i>
+                        </div>
+                        <span class="skill-name">OpenAI API</span>
+                    </div>
+                </div>
+            </div>
+        </section><!-- End Skills Section -->
+
+        <!-- ======= Experience Section ======= -->
+        <section id="experience" class="resume">
+            <div class="container">
+                <div class="section-title" data-aos="fade-up">
+                    <h2>Experience</h2>
+                    <p>Professional Background</p>
+                </div>
+                
+                <h3 class="resume-title" data-aos="fade-up">Experience</h3>
+                
+                <div class="resume-item" data-aos="fade-up" data-aos-delay="100">
+                    <h4>Lead Full-Stack Developer (Capstone Project)</h4>
+                    <h5>January 2025 - Present</h5>
+                    <p><em>Our Lady of Fatima University, Antipolo, Rizal</em></p>
+                    <ul>
+                        <li>Led the complete design and development of "Intelligent Flashcard Learning System," both a Web-based and an Android-based hybrid application for accessing learning materials from any device.</li>
+                        <li>Used OpenAI API to automate generating Educational Flashcards for teachers, enabling much quicker preparation of lessons for use in classroom settings.</li>
+                        <li>Tested and debugged the application continuously to eliminate major errors, providing a stable application experience for educators and learners alike.</li>
+                    </ul>
+                </div>
+                
+                <div class="resume-item" data-aos="fade-up" data-aos-delay="200">
+                    <h4>Technical Panelist (Student Evaluator)</h4>
+                    <h5>December 2025</h5>
+                    <p><em>Our Lady of Fatima University, Antipolo, Rizal</em></p>
+                    <ul>
+                        <li>Acted as a technical panelist in the final assessment of web development capstone projects for the Bachelor of Science in Information Technology (BSIT) program for second year students.</li>
+                        <li>Assessed the students' projects against the most current Web Standards, Responsive Design Principles, and UI/UX Best Practices.</li>
+                        <li>Engaged in further analysis of the feasibility of the students' solutions through Question and Answer sessions, pushing the students to articulate their logic and reasoning behind their design and architectural choices.</li>
+                    </ul>
+                </div>
+            </div>
+        </section><!-- End Experience Section -->
+
+        <!-- ======= Education Section ======= -->
+        <section id="education" class="resume section-bg">
+            <div class="container">
+                <div class="section-title" data-aos="fade-up">
+                    <h2>Education</h2>
+                    <p>Academic Background</p>
+                </div>
+                
+                <h3 class="resume-title" data-aos="fade-up">Academic History</h3>
+                
+                <div class="resume-item" data-aos="fade-up" data-aos-delay="100">
+                    <h4>Bachelor of Science in Information Technology</h4>
+                    <h5>August 2022 - Present</h5>
+                    <p><em>Our Lady of Fatima University, Antipolo City</em></p>
+                    <p>Currently in my fourth year, focusing on software development, web technologies, and database management. Actively involved in capstone projects and technical evaluations.</p>
+                </div>
+                
+                <div class="resume-item" data-aos="fade-up" data-aos-delay="200">
+                    <h4>Senior High School Diploma - General Academic Strand (GAS)</h4>
+                    <h5>Graduated: July 2022</h5>
+                    <p><em>Golden Sunbeams Christian School, Antipolo City</em></p>
+                    <p>Completed senior high school with a focus on general academics, preparing for higher education in information technology.</p>
+                </div>
+            </div>
+        </section><!-- End Education Section -->
+
+        <!-- ======= Certifications Section ======= -->
+        <section id="certifications" class="portfolio">
+            <div class="container">
+                <div class="section-title" data-aos="fade-up">
+                    <h2>Certifications</h2>
+                    <p>Professional Development</p>
+                </div>
+                
                 <div class="row">
-                    <div class="col">
-                        <div class="title">About</div>
-                        <div class="about-card-group">
-                            <div class="about-card-wrapper">
-                                <div class="about-card">
-                                    <div class="about-card-icon-wrapper">
-                                        <div class="about-card-icon"><img style="vertical-align: middle;" src="images/tech.png" /></div>
-                                    </div>
-                                    <div class="about-card-title"><br />
-                                        <b>Aspiring Tech Professional</b>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="about-card-wrapper">
-                                <div class="about-card">
-                                    <div class="about-card-icon-wrapper">
-                                        <div class="about-card-icon"><img src="images/graduation.png" /></div>
-                                    </div>
-                                    <div class="about-card-title">
-                                        Studied at
-                                        <br />
-                                        <b>Our Lady Of Fatima University</b>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="about-card-wrapper">
-                                <div class="about-card">
-                                    <div class="about-card-icon-wrapper">
-                                        <div class="about-card-icon"><img src="images/layers.png" /></div>
-                                    </div>
-                                    <div class="about-card-title">Innovative IT Student<br /> 
-                                        <b>Front-End &middot; Debugging  &middot; Web</b>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="about-card-wrapper">
-                                <div class="about-card">
-                                    <div class="about-card-icon-wrapper">
-                                        <div class="about-card-icon"><img src="images/service.png" /></div>
-                                    </div>
-                                    <div class="about-card-title">
-                                        Interests
-                                        <br />
-                                        <b>Fixing Smartphones &middot; Playing</b>
-                                    </div>
-                                </div>
+                    <div class="column" data-aos="fade-up" data-aos-delay="100">
+                        <div class="content">
+                            <a href="img/certificates/c1.jpg" class="portfolio-lightbox" data-gallery="certifications">
+                                <img src="img/certificates/c1.jpg" alt="The Front-End Web Developer Bootcamp" loading="lazy">
+                            </a>
+                            <div style="padding: 20px; text-align: center;">
+                                <strong>The Front-End Web Developer Bootcamp</strong>
+                                <p style="font-size: 13px; color: rgba(255,255,255,0.6); margin-top: 8px;">Udemy - HTML, CSS, JS & React</p>
                             </div>
                         </div>
                     </div>
-                </div>
-
-                <div class="row">
-                    <div class="col about-educationcol">
-                        <div class="title">Education</div>
-                        <div class="about-timeline">
-
-                            <div class="timeline-card timeline-card-green">
-                                <div class="timeline-card-title">Our Lady of Fatima University</div>
-                                <div class="timeline-card-subtitle">BS &middot; Information Technology</div>
-                                <div class="timeline-card-time">2021 - 2025</div>
+                    
+                    <div class="column" data-aos="fade-up" data-aos-delay="150">
+                        <div class="content">
+                            <a href="img/certificates/c2.jpg" class="portfolio-lightbox" data-gallery="certifications">
+                                <img src="img/certificates/c2.jpg" alt="Advanced MS Office Course" loading="lazy">
+                            </a>
+                            <div style="padding: 20px; text-align: center;">
+                                <strong>Advanced MS Office Course</strong>
+                                <p style="font-size: 13px; color: rgba(255,255,255,0.6); margin-top: 8px;">Udemy - Word, Excel, PowerPoint</p>
                             </div>
-
-                            <div class="timeline-card timeline-card-blue">
-                                <div class="timeline-card-title">Golden Sunbeams Christian School</div>
-                                <div class="timeline-card-subtitle">GR &middot; 11-12</div>
-                                <div class="timeline-card-time">2019 - 2021</div>
-                            </div>
-
-                            <div class="timeline-card timeline-card-blue">
-                                <div class="timeline-card-title">Rockfort Christian Academy</div>
-                                <div class="timeline-card-subtitle">GR &middot; 7-10</div>
-                                <div class="timeline-card-time">2016 - 2019</div>
-                            </div>
-
-                            <div class="timeline-card timeline-card-blue">
-                                <div class="timeline-card-title">Pilgrims School</div>
-                                <div class="timeline-card-subtitle">GR &middot; 4-6</div>
-                                <div class="timeline-card-time">2013 - 2016</div>
-                            </div>
-
-                            <div class="timeline-card timeline-card-blue">
-                                <div class="timeline-card-title">Our Lady of Rosary School</div>
-                                <div class="timeline-card-subtitle">Nursery - GR &middot; 3</div>
-                                <div class="timeline-card-time">2007 - 2013</div>
-                            </div>
-
                         </div>
                     </div>
-
-                    <div class="col about-experiencecol">
-                        <div class="title">Experience</div>
-                        <div class="about-timeline">
-
-                            <div class="timeline-card timeline-card-blue">
-                                <div class="timeline-card-title">Knights of the Altar (Altar Server)</div>
-                                <div class="timeline-card-subtitle">San Antonio de Padua Parish Antipolo</div>
-                                <div class="timeline-card-content">&middot; I have been serving God since Grade 3 and will continue to do so in the future. Additionally, I serve in our parish or chapel every Sunday.</div>
-                                <div class="timeline-card-time">2013 - 2024</div>
+                    
+                    <div class="column" data-aos="fade-up" data-aos-delay="200">
+                        <div class="content">
+                            <a href="img/certificates/c3.jpg" class="portfolio-lightbox" data-gallery="certifications">
+                                <img src="img/certificates/c3.jpg" alt="Certificate 3" loading="lazy">
+                            </a>
+                            <div style="padding: 20px; text-align: center;">
+                                <strong>Professional Certificate</strong>
+                                <p style="font-size: 13px; color: rgba(255,255,255,0.6); margin-top: 8px;">Technical Certification</p>
                             </div>
-
                         </div>
                     </div>
-
-                    <div class="col about-skillcol">
-                        <div class="title">Skills</div>
-                        <div class="about-timeline">
-
-                            <div class="skills-title">Programming Languages</div>
-                            <div class="skills-content">
-                                <div class="skills-tile">Java</div>
-                                <div class="skills-tile">Python</div>
-                                <div class="skills-tile">JavaScript</div>
-                                <div class="skills-tile">SQL</div>
-                                <div class="skills-tile">C</div>
-                                <div class="skills-tile">C++</div>
+                    
+                    <div class="column" data-aos="fade-up" data-aos-delay="250">
+                        <div class="content">
+                            <a href="img/certificates/c4.png" class="portfolio-lightbox" data-gallery="certifications">
+                                <img src="img/certificates/c4.png" alt="Certificate 4" loading="lazy">
+                            </a>
+                            <div style="padding: 20px; text-align: center;">
+                                <strong>Professional Certificate</strong>
+                                <p style="font-size: 13px; color: rgba(255,255,255,0.6); margin-top: 8px;">Technical Certification</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="column" data-aos="fade-up" data-aos-delay="300">
+                        <div class="content">
+                            <a href="img/certificates/c5.jpg" class="portfolio-lightbox" data-gallery="certifications">
+                                <img src="img/certificates/c5.jpg" alt="Certificate 5" loading="lazy">
+                            </a>
+                            <div style="padding: 20px; text-align: center;">
+                                <strong>Professional Certificate</strong>
+                                <p style="font-size: 13px; color: rgba(255,255,255,0.6); margin-top: 8px;">Technical Certification</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="column" data-aos="fade-up" data-aos-delay="350">
+                        <div class="content">
+                            <a href="img/certificates/c6.png" class="portfolio-lightbox" data-gallery="certifications">
+                                <img src="img/certificates/c6.png" alt="Certificate 6" loading="lazy">
+                            </a>
+                            <div style="padding: 20px; text-align: center;">
+                                <strong>Professional Certificate</strong>
+                                <p style="font-size: 13px; color: rgba(255,255,255,0.6); margin-top: 8px;">Technical Certification</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="column" data-aos="fade-up" data-aos-delay="400">
+                        <div class="content">
+                            <a href="img/certificates/c7.jpg" class="portfolio-lightbox" data-gallery="certifications">
+                                <img src="img/certificates/c7.jpg" alt="Certificate 7" loading="lazy">
+                            </a>
+                            <div style="padding: 20px; text-align: center;">
+                                <strong>Professional Certificate</strong>
+                                <p style="font-size: 13px; color: rgba(255,255,255,0.6); margin-top: 8px;">Technical Certification</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </section><!-- End Certifications Section -->
 
-        <div class="content">
-            <div id="projects" class="project">
-                <div class="container project-container">
-                    <div class="row">
-                        <div class="title">Projects</div>
-                    </div>
-                    <div class="row project-row">
-                        <div class="col project-col">
-                            <div class="project-card">
-                                <div class="project-card-cover project-card-assignment1"></div>
-                                <div class="project-card-content">
-                                    <div class="project-card-title">Assignment #1</div>
-                                    <a target="_blank" href="https://olfu.instructure.com/courses/237197/assignments/8308380">    
-                                        <div class="project-card-btn project-card-blackbutton">Canvas</div>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
+        <!-- ======= Contact CTA Section ======= -->
+        <section id="contact-cta" class="about">
+            <div class="container">
+                <div class="content" data-aos="fade-up" style="text-align: center;">
+                    <h3>Let's Work Together</h3>
+                    <p style="max-width: 600px; margin: 0 auto 24px;">
+                        I'm currently looking for internship opportunities where I can apply my skills and continue to grow as a developer. 
+                        Feel free to reach out if you'd like to discuss potential opportunities!
+                    </p>
+                    <div class="hero-cta">
+                        <a href="mailto:zhonmarkmanaois@gmail.com" class="btn btn-primary">
+                            <i class='bx bx-envelope' style="margin-right: 8px;"></i> Get In Touch
+                        </a>
+                        <a href="https://github.com/zhonm" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+                            <i class='bx bxl-github' style="margin-right: 8px;"></i> View GitHub
+                        </a>
                     </div>
                 </div>
             </div>
+        </section><!-- End Contact CTA Section -->
+
+    </main><!-- End #main -->
+
+    <!-- ======= Footer ======= -->
+    <footer id="footer">
+        <div class="container">
+            <div class="copyright">
+                Designed & Built with 💜 by <strong><span>Zhon Mark R. Manaois</span></strong>
+            </div>
+            <div class="credits" style="margin-top: 8px; font-size: 12px; color: rgba(255,255,255,0.5);">
+                © 2025 All Rights Reserved
+            </div>
         </div>
-    </div>
-</div>
-</div>
-        <div class="footer">
-            2024 &middot; Zhon Mark Manaois
-        </div>
-    </body>
+    </footer><!-- End Footer -->
+
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center" aria-label="Back to top">
+        <i class='bx bxs-up-arrow-alt'></i>
+    </a>
+
+    <!-- Vendor JS Files -->
+    <script src="vendor/aos/aos.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="vendor/typed.js/typed.min.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="js/main.js"></script>
+
+</body>
 </html>
