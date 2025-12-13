@@ -401,6 +401,15 @@ h1, h2, h3, h4, h5, h6 {
     align-items: center;
     position: relative;
     padding: 40px 20px;
+    margin-left: 320px;
+    width: calc(100% - 320px);
+}
+
+@media (max-width: 1199px) {
+    #hero {
+        margin-left: 0;
+        width: 100%;
+    }
 }
 
 #hero::before {
